@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | HouseLearning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="green.css" rel="stylesheet">
+    <script src="/cookiebanner.js"></script>
+</head>
+<body>
+
+<div class="feedback-container">
+    <div class="header">
+        <h1>HouseLearning</h1>
+        <p>Verified Student Feedback</p>
+    </div>
+
+    <a href="#" id="autofillBtn" class="autofill-link disabled">Autofill Account Information</a>
+
+    <form id="feedbackForm">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john.doe123@houselearning.org" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Experience Rating</label>
+            <select id="rating" required>
+                <option value="">Select a rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very Poor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">How can we improve?</label>
+            <textarea id="comments" placeholder="Your thoughts..."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Submit Feedback</button>
+        <div id="status"></div>
+    </form>
+</div>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
